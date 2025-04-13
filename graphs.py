@@ -12,7 +12,7 @@ plt.title(r'Кривая: $x = a \sin t \cos^2 t$, $y = a \sin^2 t \cos t$')
 plt.xlabel('x')
 plt.ylabel('y')
 plt.grid(True)
-plt.savefig('curve3.png', dpi=300)
+plt.savefig('3.png', dpi=300)
 plt.close()
 #Задание 4
 a = 1
@@ -30,7 +30,7 @@ plt.figure(figsize=(8, 8))
 plt.polar(theta, r, color='green')
 plt.title(r'Кривая: $x^6 + y^6 = a^2 x^3 y$') 
 plt.grid(True)
-plt.savefig('curve4.png', dpi=300)
+plt.savefig('4.png', dpi=300)
 plt.close()
 
 #Задание 5
@@ -46,5 +46,5 @@ ax.plot(x, y, z, color='red')
 ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.set_zlabel('z')
-plt.savefig('curve5_3d.png', dpi=300)
+plt.savefig('5.png', dpi=300)
 
