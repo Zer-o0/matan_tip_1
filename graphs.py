@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+#Задание 3
 a = 1
 t = np.linspace(0, np.pi/2, 1000)
 x = a * np.sin(t) * np.cos(t)**2
@@ -13,6 +13,24 @@ plt.xlabel('x')
 plt.ylabel('y')
 plt.grid(True)
 plt.savefig('curve3.png', dpi=300)
+plt.close()
+#Задание 4
+a = 1
+theta = np.linspace(0, 2*np.pi, 1000)
+cos_theta = np.cos(theta)
+sin_theta = np.sin(theta)
+
+
+numerator = a**2 * cos_theta**3 * sin_theta
+denominator = cos_theta**6 + sin_theta**6
+r = numerator / (denominator + 1e-12)  # Защита от деления на ноль
+
+
+plt.figure(figsize=(8, 8))
+plt.polar(theta, r, color='green')
+plt.title(r'Кривая: $x^6 + y^6 = a^2 x^3 y$') 
+plt.grid(True)
+plt.savefig('curve4.png', dpi=300)
 plt.close()
 
 #Задание 5
@@ -29,3 +47,4 @@ ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.set_zlabel('z')
 plt.savefig('curve5_3d.png', dpi=300)
+
